@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+
+    img {
+      width: 100%;
+      height: 68%;
+    }
+
+    h3, p {
+      text-align: center;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Wife's Favorite Movies/Series</h1>
+    <div class="row">
+      <div class="column">
+        <img src="images/titanic.jpg">
+        <h3>Titanic</h3>
+        <p>In 1996, aboard the research vessel Akademik Mstislav Keldysh, Brock Lovett and his team search the wreck of RMS
+        Titanic. They recover a safe they hope contains a necklace with a large diamond known as the Heart of the Ocean.
+        Instead, they only find a drawing of a young nude woman wearing the necklace. The sketch is dated April 14, 1912, the
+        same day the Titanic struck the iceberg that caused it to sink. Rose Dawson Calvert, the woman in the drawing,
+        is brought aboard Keldysh. She recounts her experiences aboard Titanic.</p>
+      </div>
+      <div class="column">
+        <img src="images/crash-landing-on-you.jpg">
+        <h3>Crash Landing On You</h3>
+        <p>Yoon Se-ri (Son Ye-jin) is a successful businesswoman and her father's choice to take over leadership of the family
+        chaebol. As the Queen's Group prepares to make the official announcement, Se-ri goes out paragliding to test her latest line of
+        extreme sportswear and is caught in a sudden tornado, which blows her over the Korean Demilitarized Zone, where she has
+        a fateful encounter with Captain Ri Jeong-hyeok (Hyun Bin).</p>
+      </div>
+      <div class="column">
+        <img src="images/crazy-rich-asians.jpg">
+        <h3>Crazy Rich Asians</h3>
+        <p>Rachel Chu is happy to accompany her longtime boyfriend, Nick, to his best friend's wedding in Singapore. She's also
+        surprised to learn that Nick's family is extremely wealthy and he's considered one of the country's most eligible
+        bachelors. Thrust into the spotlight, Rachel must now contend with jealous socialites, quirky relatives and something
+        far, far worse -- Nick's disapproving mother.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
